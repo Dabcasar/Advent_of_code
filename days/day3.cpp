@@ -15,7 +15,7 @@ bool isAdjacentToSymbol(std::vector<std::string> line, int row, int col){
         {1,1},{-1,-1},{1,-1},{-1,1}
     };
 
-    for(const int (&dir)[2] : directions){
+    for(auto& dir: directions){
         int newRow = row + dir[0];
         int newCol = col + dir[1];
         if(newRow < 0 || newRow >= line.size() || newCol < 0 || newCol >= line[newRow].size()){
@@ -37,7 +37,7 @@ std::string getGearIndex(std::vector<std::string> line, int row, int col){
         {1,1},{-1,-1},{1,-1},{-1,1}
     };
 
-    for(const int (&dir)[2] : directions){
+    for(auto& dir: directions){
         int newRow = row + dir[0];
         int newCol = col + dir[1];
         if(newRow < 0 || newRow >= line.size() || newCol < 0 || newCol >= line[newRow].size()){
