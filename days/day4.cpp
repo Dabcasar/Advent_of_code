@@ -112,7 +112,6 @@ void part_1(std::vector<std::string>& inputLines){
 
 int main(){
     std::ifstream myfile ("day4input.txt");
-
     std::vector<std::string> inputLines;
     std::string line;
 
